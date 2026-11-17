@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Binita Debi Agarwala</title>
+<meta name="description" content="Binita Debi Agarwala: physics student at the University of Dhaka working at the intersection of materials science, applied AI research and social impact.">
+<meta property="og:title" content="Binita Debi Agarwala">
+<meta property="og:description" content="Physics, materials science, applied AI research and social impact, from Dhaka.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Soft board palette: sage, blush, lavender, sand on a calm off-white; serif display for the name, clean sans for reading */
+:root{
+  --bg:#f7f6f2; --surface:#ffffff; --ink:#2b2f33; --muted:#6b7177; --line:#e7e4dc;
+  --sage:#a8c3b0; --sage-d:#4f7a62; --blush:#efc7c2; --blush-d:#a8545a; --lav:#cfc6e6; --lav-d:#5f528f; --sand:#ecd9b6; --sand-d:#8a6a2c;
+  --accent:#4f7a62; --display:'DM Serif Display',Georgia,serif; --body:'Plus Jakarta Sans',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#17191b; --surface:#202427; --ink:#ecebe7; --muted:#a3a8ad; --line:#30363b;
+  --sage:#3c5a48; --sage-d:#a8d0b6; --blush:#5c3a3c; --blush-d:#f0b9b6; --lav:#433d5c; --lav-d:#c9bff0; --sand:#5a4b30; --sand-d:#ecd29b; --accent:#a8d0b6; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#17191b; --surface:#202427; --ink:#ecebe7; --muted:#a3a8ad; --line:#30363b;
+  --sage:#3c5a48; --sage-d:#a8d0b6; --blush:#5c3a3c; --blush-d:#f0b9b6; --lav:#433d5c; --lav-d:#c9bff0; --sand:#5a4b30; --sand-d:#ecd29b; --accent:#a8d0b6; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:14px;height:56px}
+nav .logo{font-family:var(--display);font-size:1.25rem;text-decoration:none;color:var(--ink);margin-right:auto}
+nav .links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav .links a{color:var(--muted);text-decoration:none;font-size:.88rem;font-weight:500;padding:6px 10px;border-radius:999px;white-space:nowrap}
+nav .links a:hover{background:var(--surface);color:var(--ink)}
+.theme{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;width:34px;height:34px;cursor:pointer;flex:none}
+/* hero */
+.hero{padding:64px 0 40px;display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:center}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:40px}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;font-weight:600;color:var(--sage-d);background:var(--sage);background:color-mix(in srgb,var(--sage) 45%,transparent);padding:5px 12px;border-radius:999px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--sage-d)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(2.6rem,7vw,4.3rem);line-height:1.04;margin:16px 0 14px;letter-spacing:-.01em}
+.lead{font-size:1.12rem;color:var(--muted);max-width:56ch;margin:0 0 22px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font-weight:600;font-size:.93rem;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink);background:transparent;transition:transform .15s}
+.btn.solid{background:var(--ink);color:var(--bg)}
+.btn:hover{transform:translateY(-2px)}
+.board{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pin{border-radius:20px;padding:18px;display:flex;flex-direction:column;justify-content:flex-end;min-height:120px}
+.pin b{font-family:var(--display);font-weight:400;font-size:1.7rem;line-height:1.1}
+.pin span{font-size:.84rem;opacity:.85}
+.pin.tall{grid-row:span 2;min-height:252px}
+.c-sage{background:var(--sage)} .c-blush{background:var(--blush)} .c-lav{background:var(--lav)} .c-sand{background:var(--sand)}
+/* sections */
+section{padding:48px 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:22px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(1.8rem,4vw,2.4rem);margin:0;line-height:1.1}
+.sub{color:var(--muted);margin:0;max-width:60ch}
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.f{border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;font:600 .85rem var(--body);cursor:pointer}
+.f[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+/* masonry */
+.masonry{columns:3 260px;column-gap:16px}
+.card{break-inside:avoid;margin:0 0 16px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px 18px 16px;display:block;transition:transform .2s, box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(0,0,0,.07)}
+.card .top{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
+.badge{font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:999px}
+.b-ai{background:var(--lav);color:var(--lav-d)} .b-research{background:var(--sage);color:var(--sage-d)} .b-lead{background:var(--blush);color:var(--blush-d)} .b-impact{background:var(--sand);color:var(--sand-d)}
+.when{font-size:.8rem;color:var(--muted);white-space:nowrap}
+.card h3{font-size:1.04rem;margin:0 0 2px;line-height:1.35}
+.org{font-size:.9rem;color:var(--muted);margin:0 0 8px}
+.card p{margin:0 0 6px;font-size:.94rem}
+details{margin-top:6px}
+summary{cursor:pointer;font-weight:600;font-size:.86rem;color:var(--accent);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:" +"}
+details[open] summary::after{content:" \2212"}
+details ul{margin:8px 0 0;padding-left:1.15em;font-size:.92rem}
+details li{margin:3px 0}
+.hl{background:linear-gradient(transparent 60%,var(--sand) 60%);padding:0 2px}
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.sk{border-radius:20px;padding:18px}
+.sk h3{font-size:1rem;margin:0 0 10px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{background:var(--surface);border-radius:999px;padding:4px 11px;font-size:.84rem}
+/* writing + log */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.split{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+.panel h3{font-family:var(--display);font-weight:400;font-size:1.45rem;margin:0 0 8px}
+/* education */
+.edu{display:grid;gap:12px}
+.edu .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 18px}
+.edu b{font-weight:600}
+/* contact */
+.contact{text-align:center;padding:64px 0 80px}
+.contact h2{margin-bottom:10px}
+.contact .cta{justify-content:center;margin-top:20px}
+footer{font-size:.82rem;color:var(--muted);text-align:center;padding:0 0 40px}
+@media (prefers-reduced-motion:no-preference){
+  .rise{animation:rise .6s ease both}
+  .rise:nth-child(2){animation-delay:.08s}.rise:nth-child(3){animation-delay:.16s}.rise:nth-child(4){animation-delay:.24s}
+  @keyframes rise{from{opacity:.001;transform:translateY(12px)}to{opacity:1;transform:none}}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="#top">Binita</a>
+    <div class="links">
+      <a href="#journey">Journey</a><a href="#research">Research</a><a href="#skills">Skills</a><a href="#writing">Writing</a><a href="#contact">Contact</a>
+    </div>
+    <button class="theme" id="theme" type="button" aria-label="Switch light or dark theme">◐</button>
+  </div>
+</nav>
+
+<main id="top">
+<div class="wrap">
+
+  <header class="hero">
+    <div>
+      <span class="eyebrow rise"><span class="dot"></span>Open to research programmes, fellowships and early-stage teams</span>
+      <h1 class="rise">Binita Debi Agarwala</h1>
+      <p class="lead rise">Physics student at the University of Dhaka, working where science meets people: from simulating 2D materials to evaluating AI systems in Bangla, and building programmes that create real-world impact.</p>
+      <div class="cta rise">
+        <a class="btn solid" href="mailto:agarwalbinita20@gmail.com">Get in touch</a>
+        <a class="btn" href="https://www.linkedin.com/in/binita20/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://medium.com/@agarwalbinita20" target="_blank" rel="noopener">Medium</a>
+      </div>
+    </div>
+    <div class="board" aria-label="Highlights">
+      <div class="pin tall c-sage"><b>Top 4 of 1,065</b><span>Shoktikonna Solve-a-thon · BDT 50,000 innovation award</span></div>
+      <div class="pin c-lav"><b>DGIST</b><span>Summer research, computational materials · South Korea</span></div>
+      <div class="pin c-blush"><b>ISRC 2026</b><span>Research poster accepted</span></div>
+    </div>
+  </header>
+
+  <div class="board" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-bottom:48px" aria-label="More highlights">
+    <div class="pin c-sand"><b>35+</b><span>stories of social changemakers documented</span></div>
+    <div class="pin c-blush"><b>12 students</b><span>mentored through a Harvard-based leadership curriculum</span></div>
+    <div class="pin c-lav"><b>1 of 14</b><span>Bloom Fellows selected from 137 candidates</span></div>
+    <div class="pin c-sage"><b>BDT 50,000</b><span>raised for a community environment project</span></div>
+  </div>
+
+  <section id="journey" aria-labelledby="journey-h">
+    <div class="sec-head">
+      <div><h2 id="journey-h">Journey</h2><p class="sub">Research, applied AI, leadership and social impact. Tap a card to read more.</p></div>
+      <div class="filters" role="group" aria-label="Filter the journey">
+        <button class="f" type="button" data-f="all" aria-pressed="true">All</button>
+        <button class="f" type="button" data-f="ai" aria-pressed="false">Applied AI</button>
+        <button class="f" type="button" data-f="research" aria-pressed="false">Research</button>
+        <button class="f" type="button" data-f="lead" aria-pressed="false">Leadership</button>
+        <button class="f" type="button" data-f="impact" aria-pressed="false">Social impact</button>
+      </div>
+    </div>
+
+    <div class="masonry" id="cards">
+      <article class="card" data-t="ai">
+        <div class="top"><span class="badge b-ai">Applied AI</span><span class="when">Sep 2026 to present</span></div>
+        <h3>Research Intern</h3><p class="org">Karigor AI Labs, Dhaka</p>
+        <p>An agentic engineering lab building AI agents for organisations whose people speak Bangla (<a href="https://karigor.ai" target="_blank" rel="noopener">karigor.ai</a>).</p>
+        <details><summary>What I work on</summary><ul>
+          <li>Evaluating AI agents with written test cases: what a good and a bad response look like, and the rules a response must never break.</li>
+          <li>Designing small, falsifiable experiments before any data is collected.</li>
+          <li>Human data labelling with independent labellers and agreement checks.</li>
+          <li>Studying how language models handle Bangla, Banglish and English.</li>
+          <li>Research writing and documentation in a review-before-publish team.</li>
+        </ul></details>
+      </article>
+
+      <article class="card" data-t="research">
+        <div class="top"><span class="badge b-research">Research</span><span class="when">Jun to Aug 2026</span></div>
+        <h3>Summer Research Intern</h3><p class="org">DGIST, Computational Materials Theory Lab · South Korea</p>
+        <p>Under Dr. Joongoo Kang, Department of Emerging Materials Science.</p>
+        <details><summary>What I did</summary><ul>
+          <li>Ran DFT simulations of low-dimensional and 2D material systems, extending prior work on carbon nanotubes and graphene.</li>
+          <li>Built and adapted SIESTA-based simulation pipelines for new material systems, working independently in a new lab.</li>
+        </ul></details>
+      </article>
+
+      <article class="card" data-t="ai">
+        <div class="top"><span class="badge b-ai">Applied AI</span><span class="when">Jun 2026 to present</span></div>
+        <h3>AI Intern</h3><p class="org">FlyRank AI</p>
+        <p>Building AI fluency through hands-on use of AI tools in a fast-moving industry, alongside my degree.</p>
+      </article>
+
+      <article class="card" data-t="ai">
+        <div class="top"><span class="badge b-ai">Applied AI</span><span class="when">Sep 2026 to present</span></div>
+        <h3>Global Consumer Intelligence Participant '26</h3><p class="org">GCI World, Matsuo-Iwasawa Lab, University of Tokyo</p>
+      </article>
+
+      <article class="card" data-t="lead">
+        <div class="top"><span class="badge b-lead">Leadership</span><span class="when">Aug 2025 to Feb 2026</span></div>
+        <h3>Shoktikonna Graduate</h3><p class="org">Leadership and sustainability programme</p>
+        <p><span class="hl">Top 4 of 1,065</span> in the Solve-a-thon with a solar-powered Battery-as-a-Service concept for e-rickshaws, winning a BDT 50,000 innovation award.</p>
+        <details><summary>More</summary><ul>
+          <li>Selected as 1 of 75 participants from 1,065 applicants.</li>
+          <li>Designed a closed-loop recycling chain for toxic battery disposal in Mirpur.</li>
+          <li>24 live sessions and 4 Coursera certifications.</li>
+        </ul></details>
+      </article>
+
+      <article class="card" data-t="lead">
+        <div class="top"><span class="badge b-lead">Leadership</span><span class="when">Oct to Nov 2025</span></div>
+        <h3>Leadership Facilitator</h3><p class="org">Bangladesh Youth Leadership Center (BYLC)</p>
+        <p>Mentored 12 students through a Harvard-based leadership curriculum; every student completed a final project.</p>
+        <details><summary>More</summary><ul>
+          <li>Structured feedback across 16 sessions, with full attendance throughout.</li>
+          <li>Tracked progress in a data-driven format during a 16-day field deployment at Mohakhali.</li>
+        </ul></details>
+      </article>
+
+      <article class="card" data-t="lead">
+        <div class="top"><span class="badge b-lead">Leadership</span><span class="when">Oct 2023 to Jan 2024</span></div>
+        <h3>Bloom Fellow, then Researcher</h3><p class="org">Bangladesh Women Investors Network</p>
+        <p>One of 14 fellows selected from 137 candidates through three interview rounds.</p>
+        <details><summary>More</summary><ul><li>Analysed 10+ national and international startup case studies with active industry leaders.</li></ul></details>
+      </article>
+
+      <article class="card" data-t="impact">
+        <div class="top"><span class="badge b-impact">Social impact</span><span class="when">Nov 2020 to Aug 2024</span></div>
+        <h3>Senior Writer</h3><p class="org">Volunteer Stories</p>
+        <p>Documented 35+ real-world stories of social changemakers.</p>
+      </article>
+
+      <article class="card" data-t="impact">
+        <div class="top"><span class="badge b-impact">Social impact</span><span class="when">Jan to Aug 2024</span></div>
+        <h3>Fellow, Empowering Actions for Girls Leadership and Education</h3><p class="org">Pcycle</p>
+      </article>
+
+      <article class="card" data-t="impact">
+        <div class="top"><span class="badge b-impact">Social impact</span><span class="when">Feb to May 2024</span></div>
+        <h3>Program Specialist</h3><p class="org">BRAC Youth Platform</p>
+      </article>
+
+      <article class="card" data-t="impact">
+        <div class="top"><span class="badge b-impact">Social impact</span><span class="when"></span></div>
+        <h3>Community project funding</h3><p class="org">Environment and cleanliness</p>
+        <p>Secured BDT 50,000 to fund a community project.</p>
+      </article>
+
+      <article class="card" data-t="lead">
+        <div class="top"><span class="badge b-lead">Leadership</span><span class="when">Jan to Mar 2024</span></div>
+        <h3>HR Generalist Trainee</h3><p class="org">Aurora Consulting</p>
+        <p>Recruitment, onboarding, employee relations and performance management; my first step into the startup world.</p>
+      </article>
+
+      <article class="card" data-t="impact">
+        <div class="top"><span class="badge b-impact">Social impact</span><span class="when">Jan 2022 to Aug 2023</span></div>
+        <h3>Graphic Designer</h3><p class="org">Bangladesh Youth Association for Cancer Awareness</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="research" aria-labelledby="research-h">
+    <div class="sec-head"><div><h2 id="research-h">Research</h2><p class="sub">Questions I have worked on, from atoms to language.</p></div></div>
+    <div class="split">
+      <div class="panel">
+        <span class="badge b-ai">Poster · ISRC 2026</span>
+        <h3 style="margin-top:12px">Where a Classifier Stops Reading</h3>
+        <p>Message length, romanisation and question wording in Bangla civic-message triage. Accepted as a poster at the International Student Research Conference, Dhaka University Research Society, December 2026.</p>
+      </div>
+      <div class="panel">
+        <span class="badge b-research">Computational materials · DGIST</span>
+        <h3 style="margin-top:12px">2D and low-dimensional materials</h3>
+        <p>Density functional theory simulations with SIESTA, extending prior work on carbon nanotubes and graphene to new material systems.</p>
+      </div>
+      <div class="panel">
+        <span class="badge b-impact">Applied innovation · Shoktikonna</span>
+        <h3 style="margin-top:12px">Battery-as-a-Service for e-rickshaws</h3>
+        <p>A solar-powered battery service with a closed-loop recycling chain for toxic battery waste. Top 4 of 1,065.</p>
+      </div>
+      <div class="panel">
+        <span class="badge b-lead">How I work</span>
+        <h3 style="margin-top:12px">Measure before claiming</h3>
+        <p>My physics lab years taught me that a result without its uncertainty is incomplete. I bring that habit to AI: write the test first, report what was measured, and say clearly what is not known.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-h">
+    <div class="sec-head"><div><h2 id="skills-h">Skills</h2><p class="sub">Grouped by where I use them.</p></div></div>
+    <div class="skills">
+      <div class="sk c-lav"><h3>Applied AI research</h3><div class="tags"><span class="tag">AI evaluation</span><span class="tag">Experiment design</span><span class="tag">Data labelling and agreement</span><span class="tag">Bangla NLP</span><span class="tag">Claude Code</span></div></div>
+      <div class="sk c-sage"><h3>Science and computing</h3><div class="tags"><span class="tag">Density functional theory</span><span class="tag">SIESTA</span><span class="tag">Data science foundations</span><span class="tag">Research writing</span></div></div>
+      <div class="sk c-blush"><h3>Leadership and people</h3><div class="tags"><span class="tag">Facilitation and mentoring</span><span class="tag">Programme delivery</span><span class="tag">Recruitment and HR</span><span class="tag">Startup case analysis</span></div></div>
+      <div class="sk c-sand"><h3>Communication</h3><div class="tags"><span class="tag">Storytelling</span><span class="tag">Public writing</span><span class="tag">Graphic design</span><span class="tag">English and Bangla</span></div></div>
+    </div>
+  </section>
+
+  <section id="writing" aria-labelledby="writing-h">
+    <div class="sec-head"><div><h2 id="writing-h">Writing and learning</h2></div></div>
+    <div class="split">
+      <div class="panel">
+        <h3>On Medium</h3>
+        <p>I write in public about learning research: getting started on a research question, fast and slow thinking in AI, and why Bangla should feel as natural to AI as English.</p>
+        <p style="margin-top:12px"><a class="btn" href="https://medium.com/@agarwalbinita20" target="_blank" rel="noopener">Read on Medium</a></p>
+      </div>
+      <div class="panel">
+        <h3>Learning log</h3>
+        <p>Since mid-2026 I have been learning applied AI research by doing it: evaluating AI systems with written test cases, designing small experiments before collecting data, labelling data with independent reviewers and checking their agreement, and studying how language models handle Bangla and Banglish. Alongside, I am learning to plan projects end to end, work with stakeholders, and document my work so others can check it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="edu-h">
+    <div class="sec-head"><div><h2 id="edu-h">Education</h2></div></div>
+    <div class="edu">
+      <div class="row"><span><b>B.Sc. in Physics</b> · University of Dhaka</span><span class="when">2022 to 2026</span></div>
+      <div class="row"><span><b>Higher Secondary, Science</b> · Holy Cross College, Dhaka</span><span class="when">2019 to 2021</span></div>
+      <div class="row"><span><b>Certifications</b> · 4 Coursera certifications</span><span class="when"></span></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Let's talk</h2>
+    <p class="sub" style="margin:0 auto">Open to research programmes, fellowships, internships and early-stage teams working in science or AI.</p>
+    <div class="cta">
+      <a class="btn solid" href="mailto:agarwalbinita20@gmail.com">agarwalbinita20@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/binita20/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://medium.com/@agarwalbinita20" target="_blank" rel="noopener">Medium</a>
+    </div>
+  </section>
+
+</div>
+</main>
+<footer>Dhaka, Bangladesh · Last updated November 2026</footer>
+
+<script>
+document.querySelectorAll('.f').forEach(b=>b.addEventListener('click',()=>{
+  const f=b.dataset.f;
+  document.querySelectorAll('.f').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+  document.querySelectorAll('#cards .card').forEach(c=>{c.hidden=!(f==='all'||c.dataset.t===f)});
+}));
+const root=document.documentElement,tb=document.getElementById('theme');
+try{const s=localStorage.getItem('theme');if(s)root.dataset.theme=s}catch(e){}
+tb.addEventListener('click',()=>{
+  const dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+  root.dataset.theme=dark?'light':'dark';try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}
+});
+</script>
+</body>
+</html>
